@@ -1,27 +1,27 @@
 package com.bridgelabz;
 
 public class Maximim_Number {
-	static Float[] array = { 1.2f, 1.4f, 1.9f };
+	static String[] array = { "Peach", "Apple", "Banana" };
 
 	public static void main(String[] args) {
-		Float max;
+		String max;
 
 		max = Maximim_Number(array[0], array[1], array[2]);
 		display();
 
-		System.out.println("Maximum number : " + max);
+		System.out.println("Maximum : " + max);
 
 	}
 
 	private static void display() {
-		for (Float a : array) {
+		for (String a : array) {
 			System.out.print(a + "  ");
 		}
 		System.out.println();
 	}
 
-	private static float Maximim_Number(Float a, Float b, Float c) {
-		Float max;
+	private static String Maximim_Number(String a, String b, String c) {
+		String max;
 		if (a.compareTo(b) > 0 || a.compareTo(c) > 0) {
 			max = a;
 		} else if (b.compareTo(c) > 0) {
