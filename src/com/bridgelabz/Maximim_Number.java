@@ -1,7 +1,7 @@
 package com.bridgelabz;
 
 public class Maximim_Number {
-	static String[] array = { "Peach", "Apple", "Banana" };
+	static String[] array = {  "Apple", "Peach","Banana" };
 
 	public static void main(String[] args) {
 		String max;
