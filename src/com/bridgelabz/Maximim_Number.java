@@ -1,7 +1,7 @@
 package com.bridgelabz;
 
 public class Maximim_Number {
-	static Float[] array = { 1.9f, 1.2f, 1.4f };
+	static Float[] array = { 1.2f, 1.9f, 1.4f };
 
 	public static void main(String[] args) {
 		Float max;
