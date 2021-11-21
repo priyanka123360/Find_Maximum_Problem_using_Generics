@@ -1,7 +1,7 @@
 package com.bridgelabz;
 
 public class Maximim_Number {
-	static Integer[] array = { 9, 2, 4 };
+	static Integer[] array = { 2, 9, 4 };
 
 	public static void main(String[] args) {
 		int max;
@@ -9,7 +9,7 @@ public class Maximim_Number {
 		max = Maximim_Number(array[0], array[1], array[2]);
 		display();
 
-		System.out.println("Maximum number : " + max);
+		System.out.println("Maximum number : "+max);
 
 	}
 
@@ -17,7 +17,7 @@ public class Maximim_Number {
 		for (int a : array) {
 			System.out.print(a + "  ");
 		}
-		System.out.println();
+		System.out.println(); 
 	}
 
 	private static int Maximim_Number(Integer a, Integer b, Integer c) {
