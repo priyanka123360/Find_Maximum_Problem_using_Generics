@@ -1,33 +1,28 @@
 package com.bridgelabz;
 
 public class Maximim_Number {
-	static String[] array = {  "Apple","Banana", "Peach" };
+	private static <T extends Comparable> void getMaximum(T x, T y, T z) {
+
+		T max = x;
+		if (y.compareTo(x) > 0) {
+			max = y;
+		}
+		if (z.compareTo(max) > 0) {
+			max = z;
+		}
+
+		System.out.println("Maximum ::" + max);
+	}
 
 	public static void main(String[] args) {
-		String max;
+		System.out.println("The Maximum Number Using Generic Logic.");
+		Integer x = 9, y = 2, z = 4;
+		Float d = 1.9f, e = 1.2f, f = 1.4f;
+		String s1 = "Peach", s2 = "Apple", s3 = "Banana";
 
-		max = Maximim_Number(array[0], array[1], array[2]);
-		display();
-
-		System.out.println("Maximum : " + max);
-
-	}
-
-	private static void display() {
-		for (String a : array) {
-			System.out.print(a + "  ");
-		}
-		System.out.println();
-	}
-
-	private static String Maximim_Number(String a, String b, String c) {
-		String max;
-		if (a.compareTo(b) > 0 || a.compareTo(c) > 0) {
-			max = a;
-		} else if (b.compareTo(c) > 0) {
-			max = b;
-		} else
-			max = c;
-		return max;
+		Maximim_Number max = new Maximim_Number();
+		max.getMaximum(x, y, z);
+		max.getMaximum(d, e, f);
+		max.getMaximum(s1, s2, s3);
 	}
 }
